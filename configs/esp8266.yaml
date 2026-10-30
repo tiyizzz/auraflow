@@ -1,0 +1,51 @@
+# 由 tools/gen_config_from_ini.py 从 platformio.ini 环境 [esp8266] 生成
+# 芯片 esp8266；引脚与 src/PinConfig.h 编译期分配等价，可直接编辑后经 $CD= 或烧录生效
+name: "Croaster nodemcuv2"
+board: nodemcuv2
+sensor:
+  type: max6675
+  sck_pin: gpio.14
+  so_pin: gpio.13
+  bt:
+    cs_pin: gpio.15
+  et:
+    cs_pin: gpio.12
+  read_interval_ms: 250
+  spi_hz: 1000000
+channels:
+  mode: dual
+  swap: false
+  list: [{name: "", sensor: bt, enabled: true}, {name: "", sensor: et, enabled: true}]
+display:
+  type: ssd1306
+  uart_tx_pin: NO_PIN
+  uart_rx_pin: NO_PIN
+  baud: 9600
+  i2c_sda_pin: gpio.4
+  i2c_scl_pin: gpio.5
+  i2c_address: 60
+control:
+  heater_relay_pin: gpio.16   # active-high（HIGH=开，同 PinConfig.h）
+  fan_pwm_pin: NO_PIN
+  fan_pwm:
+    freq: 5000
+    bits: 8
+    min: 0
+    max: 100
+  heater:
+    over_temp_c: 300.0
+    hysteresis_c: 10.0
+    watchdog_ms: 2000
+    fault_count: 3
+    min_fan_pct: 0
+  cool:
+    off_c: 80.0
+    dwell_s: 30
+    fan_min: 40
+  tpo:
+    window_ms: 1000
+  pid:
+    kp: 2.0
+    ki: 0.05
+    kd: 1.0
+    setpoint_c: 220.0

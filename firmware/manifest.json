@@ -1,0 +1,98 @@
+{
+  "name": "Croaster",
+  "version": "0.51",
+  "new_install_prompt_erase": false,
+  "new_install_improv_wait_time": 10,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_esp32c3_dummy_max31855_nextion_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_esp32c3_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_esp32c3_max31855_nextion_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_esp32c3_max31855_oled_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_weactstudio_esp32c3coreboard_MAX6675_nextion_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_nextion_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_oled_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "esp32c3/esp32c3_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "parts": [
+        {
+          "path": "esp8266/esp8266_cfg_esp8266_latest.bin",
+          "offset": 0
+        }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "parts": [
+        {
+          "path": "esp8266/esp8266_latest.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

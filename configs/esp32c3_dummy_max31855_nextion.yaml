@@ -1,0 +1,52 @@
+# 由 tools/gen_config_from_ini.py 从 platformio.ini 环境 [esp32c3_dummy_max31855_nextion] 生成
+# 芯片 esp32c3；引脚与 src/PinConfig.h 编译期分配等价，可直接编辑后经 $CD= 或烧录生效
+name: "Croaster esp32-c3-devkitm-1"
+board: esp32-c3-devkitm-1
+sensor:
+  type: dummy
+  sck_pin: gpio.4
+  so_pin: gpio.5
+  bt:
+    cs_pin: gpio.6
+  et:
+    cs_pin: gpio.7
+  read_interval_ms: 250
+  spi_hz: 1000000
+channels:
+  mode: dual
+  swap: false
+  list: [{name: "", sensor: bt, enabled: true}, {name: "", sensor: et, enabled: true}]
+display:
+  type: nextion
+  uart_tx_pin: gpio.21
+  uart_rx_pin: gpio.20
+  baud: 9600
+  i2c_sda_pin: gpio.8
+  i2c_scl_pin: gpio.9
+  i2c_address: 60
+control:
+  heater_relay_pin: gpio.1   # active-high（HIGH=开，同 PinConfig.h）
+  fan_pwm_pin: gpio.0
+  fan_pwm:
+    freq: 5000
+    bits: 8
+    min: 0
+    max: 100
+  heater:
+    over_temp_c: 300.0
+    hysteresis_c: 10.0
+    watchdog_ms: 2000
+    fault_count: 3
+    min_fan_pct: 30
+  cool:
+      off_c: 80.0
+      dwell_s: 30
+      fan_min: 40
+
+  tpo:
+    window_ms: 1000
+  pid:
+    kp: 2.0
+    ki: 0.05
+    kd: 1.0
+    setpoint_c: 220.0

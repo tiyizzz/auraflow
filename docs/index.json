@@ -1,0 +1,42 @@
+[
+  {
+    "section": "alog",
+    "files": [
+      {
+        "slug": "alog/index",
+        "title": "AURAFLOW 烘焙曲线参考数据",
+        "file": "alog/index.md"
+      }
+    ]
+  },
+  {
+    "section": "firmware",
+    "files": [
+      {
+        "slug": "firmware/flash",
+        "title": "AURAFLOW 固件刷写指南",
+        "file": "firmware/flash.md"
+      }
+    ]
+  },
+  {
+    "section": "getting-started",
+    "files": [
+      {
+        "slug": "getting-started/index",
+        "title": "AURAFLOW 快速开始",
+        "file": "getting-started/index.md"
+      }
+    ]
+  },
+  {
+    "section": "hardware",
+    "files": [
+      {
+        "slug": "hardware/assembly",
+        "title": "AURAFLOW R1 硬件组装指南",
+        "file": "hardware/assembly.md"
+      }
+    ]
+  }
+]

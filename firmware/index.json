@@ -1,0 +1,26 @@
+{
+  "esp32c3": [
+    "esp32c3_cfg_esp32c3_dummy_max31855_nextion_latest.bin",
+    "esp32c3_cfg_esp32c3_latest.bin",
+    "esp32c3_cfg_esp32c3_main_202610301645.bin",
+    "esp32c3_cfg_esp32c3_max31855_nextion_latest.bin",
+    "esp32c3_cfg_esp32c3_max31855_oled_latest.bin",
+    "esp32c3_cfg_esp32c3_max31855_oled_main_202610301645.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_MAX6675_nextion_latest.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_MAX6675_nextion_main_202610301645.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_nextion_latest.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_nextion_main_202610301645.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_oled_latest.bin",
+    "esp32c3_cfg_weactstudio_esp32c3coreboard_max31855_oled_main_202610301645.bin",
+    "esp32c3_latest.bin",
+    "esp32c3_main_202610301643.bin",
+    "esp32c3_main_202610301644.bin"
+  ],
+  "esp8266": [
+    "esp8266_cfg_esp8266_latest.bin",
+    "esp8266_cfg_esp8266_main_202610301645.bin",
+    "esp8266_latest.bin",
+    "esp8266_main_202610301643.bin",
+    "esp8266_main_202610301644.bin"
+  ]
+}
